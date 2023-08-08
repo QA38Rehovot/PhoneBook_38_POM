@@ -40,6 +40,16 @@ public class AuthenticationScreen extends BaseScreen{
         loginBtn.click();
         return new ContactListScreen(driver);
     }
+    public ContactListScreen submitRegistration(){
+        regBtn.click();
+        return new ContactListScreen(driver);
+    }
+    public AuthenticationScreen submitRegistrationNegative(){
+        regBtn.click();
+        return this;
+    }
+
+    
 
 
 

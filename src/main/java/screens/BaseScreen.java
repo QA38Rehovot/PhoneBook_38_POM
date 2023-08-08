@@ -20,6 +20,7 @@ public class BaseScreen {
         element.click();
         element.clear();
         element.sendKeys(text);
+        driver.hideKeyboard();
     }
 
     public void pause(int time){
